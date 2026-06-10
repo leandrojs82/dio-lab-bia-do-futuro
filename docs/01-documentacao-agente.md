@@ -60,10 +60,9 @@ flowchart TD
 
 | Componente | Descrição |
 |------------|-----------|
-| Interface | [Streamlit] |
-| LLM | [CLAUDE] |
-| Base de Conhecimento | [JSON/CSV com dados do cliente] |
-| Validação | [Checagem de alucinações] |
+| Interface | Streamlit |
+| LLM | CLAUDE |
+| Base de Conhecimento | JSON/CSV com dados do cliente |
 
 ---
 
@@ -71,12 +70,14 @@ flowchart TD
 
 ### Estratégias Adotadas
 
-- [ ] [ex: Agente só responde com base nos dados fornecidos]
-- [ ] [ex: Respostas incluem fonte da informação]
-- [ ] [ex: Quando não sabe, admite e redireciona]
-- [ ] [ex: Não faz recomendações de investimento sem perfil do cliente]
+- [] Só usa dados fornecidos no contexto
+- [] Não recomenda investimentos específicos
+- [] Admite quando não sabe algo
+- [] Foca apenas em "educar", não em aconselhar
 
 ### Limitações Declaradas
 > O que o agente NÃO faz?
 
-[Liste aqui as limitações explícitas do agente]
+- NÃO faz recomendações de investimento
+- NÃO acessa dados bancários sensíveis (contas correntes, etc)
+- NÃO substitui um profissional certificado
